@@ -1,0 +1,192 @@
+/* Страница "Контакты" */
+
+#contact .contacts {
+    justify-content: space-between;
+}
+
+#contact h2 {
+    margin-top: 120px;
+}
+
+#contact .contacts .contact-1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+#contact .contacts .contact-1 p {
+    margin-left: 55px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    max-width: 433px;
+}
+
+.map {
+    margin-top: 80px;
+}
+
+.ymaps-2-1-79-map {
+    filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+}
+
+
+/* шапка и подвал */
+
+header,
+footer {
+    background-color: #000;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+header .container,
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 15rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation li {
+    list-style: none;
+    margin-right: 5rem;
+}
+
+.navigation li:last-child {
+    margin-right: 0px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.header-feedback a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+header a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+footer .container p {
+    color: white;
+}
+
+.footer-address p {
+    font-size: 1.4rem;
+}
+
+
+
+/* Шапка и подвал сайта */
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+    .contact-aboutus p {
+        font-size: 2rem;
+        margin-left: 3rem;
+    }
+
+    .contact-aboutus img {
+        width: 4rem;
+    }
+
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1170px) {
+
+    html {
+        font-size: 9px;
+    }
+
+    header .container,
+    footer .container {
+        width: 80%;
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    html {
+        font-size: 7px;
+    }
+
+}
+
+
+
+@media (min-width: 501px) and (max-width: 767px) {
+
+    html {
+        font-size: 4.5px;
+    }
+
+    
+    #contact .contacts .contact-1 p {
+        margin-left: 25px;
+    }
+
+}
+
+
+
+@media (min-width: 361px) and (max-width: 500px) {
+
+    html {
+        font-size: 4px;
+    }
+
+    #contact .contacts .contact-1 p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}
+
+
+
+@media (max-width: 360px) {
+
+    html {
+        font-size: 3.5px;
+    }
+
+    #contact .contacts .contact-1 img {
+        width: 20%;
+    }
+
+    #contact .contacts .contact-1 p {
+        font-size: 14px;
+        line-height: 16px;
+        margin-left: 10px;
+    }
+
+}

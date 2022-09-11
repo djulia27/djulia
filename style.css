@@ -1,0 +1,1530 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 120px;
+}
+
+section:nth-child(1) {
+    margin-bottom: 60px;
+}
+
+section:nth-child(4) {
+    margin-bottom: 40px;
+}
+
+section:nth-child(6) {
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family: Oswald-Regular;
+    color: #000;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.line {
+    height: 10px;
+    background-color: #000;
+    margin: 60px 0px;
+}
+
+.button {
+    margin: 0 auto;
+    width: 230px;
+    height: 58px;
+    background-color: #000;
+    filter: drop-shadow(3px 8px 10px rgba(255, 255, 255, 0.30));
+    padding: 17px 0;
+    transition: .7s;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .7s;
+}
+
+.button:hover {
+    background-color: #fff;
+    filter: drop-shadow(3px 8px 10px rgba(0, 0, 0, 0.30));
+}
+
+.button:hover a {
+    color: #000;
+}
+
+legend {
+    font-family: Oswald-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+input {
+    width: 471px;
+    height: 60px;
+    background: #FFFFFF;
+    margin-bottom: 20px;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 27px;
+    outline: none;
+}
+
+textarea {
+    min-width: 471px;
+    max-width: 471px;
+    min-height: 135px;
+    max-height: 170px;
+    background: #FFFFFF;
+    margin-bottom: 20px;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 27px;
+    padding-top: 20px;
+    outline: none;
+}
+
+
+
+/* шапка и подвал */
+
+header,
+footer {
+    background-color: #000;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+header .container,
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 15rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation li {
+    list-style: none;
+    margin-right: 5rem;
+}
+
+.navigation li:last-child {
+    margin-right: 0px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.header-feedback a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+header a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+footer .container p {
+    color: white;
+}
+
+.footer-address p {
+    font-size: 1.4rem;
+}
+
+
+
+/* первый блок (главная) */
+
+#main_block {
+    background: url(../img/главная_фон_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    color: #fff;
+    padding-top: 136px;
+    padding-bottom: 200px;
+}
+
+#main_block h1 {
+    font-family: Oswald-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(24px + 24 * (100vw / 1920));
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+#main_block p {
+    font-size: calc(12px + 12 * (100vw / 1920));
+    font-style: normal;
+    font-weight: normal;
+    line-height: 36px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    width: 25%;
+}
+
+
+
+/* второй блок (главная) */
+
+#about_us {
+    display: flex;
+    justify-content: center;
+}
+
+#about_us .inner_block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#about_us .inner_block p {
+    width: 57%;
+    margin-left: 30px;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: justify;
+}
+
+#about_us .direction {
+    flex-direction: row-reverse;
+    margin-top: 30px;
+}
+
+#about_us .direction p {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+
+
+/* третий блок (главная) */
+
+#choice .advantages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#choice .inner_block {
+    display: flex;
+    align-items: center;
+    width: 366px;
+    margin-bottom: 80px;
+    margin-right: 30px;
+}
+
+#choice .inner_block:nth-child(3),
+#choice .inner_block:nth-child(6) {
+    margin-right: 0;
+}
+
+
+#choice .inner_block p {
+    margin-left: 28px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+
+
+/* четвертый блок (главная) */
+
+#services-block .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#services-block .services .service {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#services-block .services .service:nth-child(1) {
+    margin-left: 0;
+}
+
+#services-block .services .service:nth-child(3) {
+    margin-right: 0;
+}
+
+#services-block .services .service .service-text {
+    width: 90%;
+    position: absolute;
+    bottom: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 14px 0;
+    margin-left: 5%;
+    text-align: center;
+    transition: .7s;
+}
+
+#services-block .services .service .service-text a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    transition: .7s;
+}
+
+#services-block .services .service .service-text:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#services-block .services .service .service-text:hover a {
+    color: #fff;
+}
+
+#services-block .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    filter: drop-shadow(3px 8px 10px rgba(0, 0, 0, 0.25));
+}
+
+
+
+
+
+/* пятый блок (главная) */
+
+#contacts {
+    background: url(../img/главная_фон_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+#contacts h2 {
+    color: #fff;
+}
+
+#contacts .line {
+    background-color: #fff;
+}
+
+#contacts .contacts,
+#contact .contacts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contacts .contacts {
+    justify-content: center;
+}
+
+#contact .contacts {
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+#contacts .contacts form,
+#contact .contacts form {
+    width: 40%;
+    justify-content: center;
+}
+
+#contacts .contacts form {
+    margin-bottom: 60px;
+}
+
+#contact .contacts input,
+#contact .contacts textarea {
+    background-color: #E1E1E1;
+}
+
+#contacts .contacts .maps {
+    filter: grayscale(100%);
+    margin-left: 26px;
+    width: 57%;
+}
+
+#contacts .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+    background-color: #fff;
+    filter: drop-shadow(3px 8px 10px rgba(0, 0, 0, 0.25));
+}
+
+#contact .contacts .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+}
+
+#contacts .button a {
+    color: #000;
+}
+
+#contacts .button:hover {
+    background-color: #000;
+    filter: drop-shadow(3px 8px 10px rgba(255, 255, 255, 0.30));
+}
+
+#contacts .button:hover a {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* описание услуги (отдельная услуга) */
+
+#wall_cladding {
+    margin-top: 120px;
+}
+
+#wall_cladding p {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: justify;
+}
+
+
+
+/* что мы предлагаем (отдельная услуга) */
+
+#block_of_offers .offers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#block_of_offers .offers .offer {
+    margin: 0 15px;
+    background-color: #000;
+    text-align: center;
+}
+
+#block_of_offers .offers .offer:nth-child(1) {
+    padding-left: 0;
+}
+
+#block_of_offers .offers .offer:nth-child(3) {
+    margin-right: 0;
+}
+
+#block_of_offers .offers .offer h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    margin: 32px 0;
+}
+
+#block_of_offers .offers .offer p {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    font-size: 24px;
+    width: 90%;
+    margin: 18px auto;
+    padding: 14px 0;
+    text-align: center;
+}
+
+#block_of_offers .offers .offer img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#block_of_offers .interest p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+
+/* блок с отзывами, слайдер (отдельная услуга) */
+
+.slider ol,
+.slider ul,
+.slider dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.slider {
+    /* устанавливаем относительное позиционирование элементу */
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 1170px;
+    margin-top: -40px;
+    margin-bottom: 120px;
+}
+
+.slider__items {
+    /* устанавливаем относительное позиционирование элементу */
+    position: relative;
+    /* устанавливаем элементу ширину, равную 100% */
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider__item {
+    /* устанавливаем относительное позиционирование элементу */
+    position: relative;
+    /* отключаем по умолчанию отображение всех слайдов */
+    display: none;
+    /* устанавливаем элементу ширину, равную 100% */
+    width: 100%;
+    /* длительность анимации трансформации */
+    transition: transform 0.6s ease;
+    /* не показывать обратную сторону трансформируемого элемента */
+    backface-visibility: hidden;
+}
+
+.slider__item_active,
+.slider__item_next,
+.slider__item_prev {
+    /* отображаем слайд, если он имеет один из этих классов */
+    display: block;
+}
+
+.slider__item_next,
+.slider__item_prev {
+    /* устанавливаем абсолютное позиционирование для элемента, на который будет сменяться слайд (на время трансформации) */
+    position: absolute;
+    /* устанавливаем положение элемента, т.е. координату top */
+    top: 0;
+}
+
+.slider__item_next.slider__item_left,
+.slider__item_prev.slider__item_right {
+    /* сдвигаем элемент на 0 по горизонтали */
+    transform: translateX(0);
+}
+
+.slider__item_next,
+.slider__item_right.slider__item_active {
+    /* сдвигаем элемент на 100% по горизонтали */
+    transform: translateX(100%);
+}
+
+.slider__item_prev,
+.slider__item_left.slider__item_active {
+    /* сдвигаем элемент на -100% по горизонтали */
+    transform: translateX(-100%);
+}
+
+/* элементы управления (назад и вперёд) слайдером */
+
+.slider__control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    color: #000;
+    text-align: center;
+    transition: .7s;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #000;
+    text-decoration: none;
+    outline: 0;
+    opacity: .6;
+}
+
+.slider__control_prev {
+    left: 0;
+}
+
+.slider__control_next {
+    right: 0;
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.slider__control_prev::before {
+    background-image: url(../img/prew.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.slider__control_next::before {
+    background-image: url(../img/next.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.slider__indicators {
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.slider__indicator {
+    position: relative;
+    flex: 0 1 auto;
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    border: #000 1px solid;
+    border-radius: 50%;
+    transition: .7s;
+}
+
+.slider__indicator:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: rgba(0, 0, 0, 0.6) 1px solid;
+}
+
+.slider__indicator::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+
+.slider__indicator::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+
+.slider__indicator_active {
+    background-color: #000;
+}
+
+.slider img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
+
+.slider__item {
+    height: 320px;
+    overflow: hidden;
+}
+
+.slider__item_inner {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 36px;
+    bottom: 0px;
+    overflow: hidden;
+    color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider__item_img {
+    flex: 0 0 80px;
+    max-width: 80px;
+}
+
+.slider__item_testimonial {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.slider__item_name {
+    font-size: 28px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.slider__item_text {
+    font-size: 24px;
+    margin-left: 24px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+/* Блок с услугами (страница "услуги") */
+
+#services_1 {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+#services_1 .service_1 h3 {
+    font-size: 36px;
+    line-height: 16px;
+    font-family: Oswald-Regular;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+#services_1 .service_1 {
+    margin-top: 80px;
+}
+
+#services_1 .service_1 .line {
+    width: 477px;
+    margin: 26px 0;
+}
+
+#services_1 .service_1 .inner_block_1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#services_1 .service_1 .inner_block_1 .inner_block_img p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: left;
+    color: #000000;
+}
+
+#services_1 .service_1 .inner_block_1 .inner_block_text p {
+    width: 631px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: justify;
+    color: #000000;
+}
+
+#services_1 .service_1 .inner_block_1 .button {
+    text-align: center;
+    margin-top: 17px;
+}
+
+
+
+
+
+
+
+
+/* запросы */
+
+
+
+/* Шапка и подвал сайта */
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+    .contact-aboutus p {
+        font-size: 2rem;
+        margin-left: 3rem;
+    }
+
+    .contact-aboutus img {
+        width: 4rem;
+    }
+
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1170px) {
+
+    html {
+        font-size: 9px;
+    }
+
+    header .container,
+    footer .container {
+        width: 80%;
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    html {
+        font-size: 7px;
+    }
+
+}
+
+
+
+@media (min-width: 501px) and (max-width: 767px) {
+
+    html {
+        font-size: 4.5px;
+    }
+
+}
+
+
+
+@media (min-width: 361px) and (max-width: 500px) {
+
+    html {
+        font-size: 4px;
+    }
+
+}
+
+
+
+@media (max-width: 360px) {
+
+    html {
+        font-size: 3.5px;
+    }
+
+}
+
+
+
+@media (min-width: 1920px) {
+
+    #main_block p {
+        font-size: 24px;
+        width: 470px;
+    }
+
+}
+
+
+
+@media (max-width: 1440px) {
+
+    #main_block p {
+        width: 30%;
+    }
+
+}
+
+
+
+@media (max-width: 1170px) {
+
+    section {
+        margin-bottom: 60px;
+    }
+
+    #services_1 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    #about_us .inner_block {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #about_us .direction {
+        margin-top: 20px;
+    }
+
+    #about_us .inner_block p {
+        width: 100%;
+        margin: 10px auto;
+        margin-bottom: 0;
+    }
+
+    #about_us .inner_block img {
+        width: 100%;
+    }
+
+    #choice .advantages {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #choice .advantages .inner_block {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    #services-block .services {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #services-block .services .service {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    #services-block .services .service,
+    #services-block .services .service img {
+        width: 100%;
+    }
+
+    #services-block .services .service .service-text {
+        padding: 5% 0;
+    }
+
+    #services-block .services .button {
+        margin-top: 30px;
+    }
+
+    #contacts .contacts,
+    #contact .contacts {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #contacts .contacts form,
+    #contact .contacts form {
+        width: 100%;
+    }
+
+    #contacts .contacts form input,
+    #contact .contacts form input {
+        width: 100%;
+        height: 80px;
+    }
+
+    #contacts .contacts form textarea,
+    #contact .contacts form textarea {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 250px;
+        max-height: 300px;
+    }
+
+    #contacts .contacts .maps {
+        margin-top: 60px;
+    }
+
+    #block_of_offers .offers {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #block_of_offers .offers .offer {
+        margin: 0;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    #block_of_offers .offers .offer p {
+        padding: 5% 0;
+    }
+
+    #block_of_offers .interest {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #block_of_offers .interest p {
+        margin-top: 30px;
+    }
+
+    #wall_cladding {
+        margin-top: 60px;
+    }
+
+    #wall_cladding p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* 
+    #contact {
+        margin-bottom: 120px;
+    } */
+
+    .slider__item_name {
+        font-size: 24px;
+    }
+
+    .slider__item_text {
+        font-size: 18px;
+    }
+
+    #services_1 .service_1 {
+        width: 100%;
+    }
+
+    #services_1 .service_1 .line {
+        width: 50%;
+    }
+
+    #services_1 .service_1 .inner_block_1 .inner_block_img,
+    #services_1 .service_1 .inner_block_1 .inner_block_img img {
+        width: 100%;
+    }
+
+    #services_1 .service_1 .inner_block_1 .inner_block_text {
+        margin-top: 20px;
+    }
+
+    #services_1 .service_1 .inner_block_1 .inner_block_text p {
+        width: 100%;
+    }
+
+    #contact .contacts {
+        width: 80%;
+        margin: 35px auto;
+    }
+
+    #contact .contacts .contact-aboutus {
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+
+    .map {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #contacts .contacts .maps {
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #contacts .contacts .maps iframe {
+        width: 100%;
+        min-height: 150px;
+        max-height: 300px;
+    }
+
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .line {
+        height: 8px;
+        margin: 30px 0px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    legend {
+        font-size: 28px;
+    }
+
+    #main_block p {
+        width: 40%;
+    }
+
+    #choice .advantages .inner_block {
+        width: 100%;
+    }
+
+    #contacts,
+    #contact {
+        padding-top: 30px;
+    }
+
+    #services_1 .service_1 h3 {
+        font-size: 28px;
+    }
+
+    #services_1 .service_1 .line {
+        margin: 13px 0;
+    }
+
+    #services_1 .service_1 {
+        margin-top: 50px;
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    #main_block h1 {
+        font-size: calc(24px + (24 + 24 * 0.7) * ((100vw - 320px) / 1920));
+    }
+
+    #main_block p {
+        font-size: calc(12px + (12 + 12 * 0.7) * ((100vw - 320px) / 1920));
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    legend {
+        font-size: 24px;
+    }
+
+    .line {
+        height: 5px;
+        margin: 20px 0px;
+    }
+
+    #contacts .contacts form textarea,
+    #contact .contacts form textarea {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 200px;
+        max-height: 250px;
+    }
+
+    .slider__item_name {
+        font-size: 18px;
+    }
+
+    .slider__item_text {
+        font-size: 14px;
+    }
+
+    #services_1 .service_1 h3 {
+        font-size: 24px;
+    }
+
+    #services_1 .service_1 .line {
+        width: 100%;
+    }
+
+    #contacts .contacts .maps iframe {
+        height: 200px;
+    }
+
+}
+
+
+
+@media (max-width: 770px) {
+
+    #block_of_offers .offers .offer:nth-child(1) {
+        margin: 0 15px;
+        margin-bottom: 30px;
+    }
+
+    #block_of_offers .offers .offer:nth-child(2) {
+        margin: 0 15px;
+        margin-bottom: 30px;
+    }
+
+    #block_of_offers .offers .offer:nth-child(3) {
+        margin: 0 15px;
+    }
+
+}
+
+
+
+@media (max-width: 740px) {
+
+    #block_of_offers .offers .offer {
+        margin: 0;
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    #main_block p {
+        width: 65%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    legend {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 18px;
+        line-height: 18px;
+        max-height: 60px;
+    }
+
+    .button {
+        width: 160px;
+        height: 30px;
+        padding-bottom: 35px;
+    }
+
+    .button a {
+        font-size: 14px;
+    }
+
+    #contacts .contacts form textarea,
+    #contact .contacts form textarea {
+        font-size: 18px;
+        line-height: 18px;
+        padding-left: 20px;
+        padding-top: 20px;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 150px;
+        max-height: 200px;
+    }
+
+    #about_us .inner_block p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+
+    #services_1 .service_1 .inner_block_1 .inner_block_text p,
+    #services_1 .service_1 .inner_block_1 .inner_block_img p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #choice .advantages .inner_block {
+        margin-bottom: 30px;
+    }
+
+    #choice .inner_block img {
+        width: 20%;
+    }
+
+    #choice .inner_block p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #services-block .services .service .service-text a {
+        font-size: 18px;
+    }
+
+    #services-block .services .button {
+        margin-top: 15px;
+    }
+
+    #services-block .services .service {
+        margin-bottom: 20px;
+    }
+
+    #wall_cladding p {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    #block_of_offers .offers .offer h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    #block_of_offers .offers .offer p {
+        font-size: 18px;
+    }
+
+    #block_of_offers .offers .offer img {
+        width: 90%;
+        margin: 0;
+    }
+
+    #block_of_offers .interest p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #wall_cladding p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .slider__item_name {
+        font-size: 16px;
+    }
+
+    .slider__item_text {
+        font-size: 12px;
+    }
+
+    .slider__indicators {
+        bottom: 0;
+    }
+
+    .slider__items img {
+        width: 50%;
+    }
+
+    #contact {
+        margin-top: -100px;
+    }
+
+    #services_1 {
+        margin-bottom: 150px;
+    }
+
+    #services_1 .service_1 .inner_block_1 .inner_block_text {
+        margin-top: 10px;
+    }
+
+    #services_1 .service_1 .inner_block_1 .inner_block_text p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #services_1 .service_1 h3 {
+        font-size: 20px;
+    }
+
+    #contacts .contacts .maps iframe {
+        height: 150px;
+    }
+
+}
+
+
+
+@media (max-width: 320px) {
+
+    input {
+        font-size: 12px;
+        line-height: 12px;
+        max-height: 40px;
+    }
+
+    .button {
+        width: 150px;
+        height: 20px;
+    }
+
+    #choice .inner_block img {
+        width: 20%;
+    }
+
+    #about_us .inner_block p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+
+    #services_1 .service_1 .inner_block_1 .inner_block_text p,
+    #services_1 .service_1 .inner_block_1 .inner_block_img p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    #choice .inner_block p {
+        font-size: 12px;
+    }
+
+    #services-block .services .service .service-text a {
+        font-size: 12px;
+    }
+
+    #contacts .contacts form textarea,
+    #contact .contacts form textarea {
+        font-size: 12px;
+        line-height: 12px;
+        padding-top: 14px;
+        padding-left: 20px;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100px;
+        max-height: 150px;
+    }
+
+    .slider__indicators {
+        bottom: 0;
+    }
+
+    .slider__indicator {
+        height: 15px;
+        width: 15px;
+    }
+
+    #block_of_offers .offers .offer p {
+        font-size: 12px;
+    }
+
+    #block_of_offers .interest p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    #contacts .contacts .maps iframe {
+        height: 100px;
+    }
+}
+
+
+
+@media (max-width: 260px) {
+
+    .button {
+        width: 130px;
+    }
+
+    .button a {
+        font-size: 12px;
+    }
+
+}
+
+
+
+/* адаптив для слайдера */
+
+@media (min-width: 576px) {
+
+    .slider__item {
+        height: 250px;
+    }
+
+    .slider__item_inner {
+        text-align: center;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+
+    .slider__item_testimonial {
+        margin-left: 15px;
+    }
+
+    .slider__item_img {
+        flex: 0 0 200px;
+        max-width: 200px;
+    }
+
+    .slider__item_testimonial {
+        text-align: left;
+    }
+
+    .slider__item_name {
+        margin-left: 20px;
+    }
+
+    .slider__item_text {
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .slider__item {
+        height: 300px;
+    }
+
+    .slider__item_img {
+        min-width: 150px;
+    }
+
+    .slider__item_name {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .slider__item_text {
+        margin-left: 0;
+    }
+
+}
